@@ -21,20 +21,7 @@ public class HomeActivity extends AppCompatActivity {
 
     ImageView ivCamera, ivLogout;
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-        if(currentUser == null){
-            sendToLogin();
-        }
-    }
-
-    public void sendToLogin(){
-        startActivity(new Intent(HomeActivity.this,LoginActivity.class));
-    }
-
-    @Override
+       @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
@@ -60,6 +47,19 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(new Intent(HomeActivity.this,LoginActivity.class));
             }
         });
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        if(currentUser == null){
+            sendToLogin();
+        }
+    }
+
+    public void sendToLogin(){
+        startActivity(new Intent(HomeActivity.this,MainActivity.class));
     }
 
     private void setupBottomNavigationView(){

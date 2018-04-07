@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
 
     TextView tvNH;
     ImageView ivNH;
-    FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
