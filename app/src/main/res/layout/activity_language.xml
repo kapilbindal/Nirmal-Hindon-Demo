@@ -17,35 +17,6 @@
     android:src="@drawable/swachh_bharat_abhiyan"
         android:layout_marginBottom="20dp"
     />
-    <!--<LinearLayout-->
-        <!--android:id="@+id/layoutUser"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:gravity="center"-->
-        <!--android:visibility="gone"-->
-        <!--android:layout_marginTop="20dp">-->
-        <!--<Button-->
-            <!--android:id="@+id/btnAdmin"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:background="@drawable/button_admin_user"-->
-            <!--android:padding="30dp"-->
-            <!--android:textColor="#ffffff"-->
-            <!--android:textStyle="bold"-->
-            <!--android:textSize="30sp"-->
-            <!--android:text="ADMIN"/>-->
-        <!--<Button-->
-            <!--android:id="@+id/btnUser"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:background="@drawable/button_admin_user"-->
-            <!--android:padding="40dp"-->
-            <!--android:layout_marginLeft="25dp"-->
-            <!--android:textColor="#ffffff"-->
-            <!--android:textSize="30sp"-->
-            <!--android:textStyle="bold"-->
-            <!--android:text="USER"/>-->
-    <!--</LinearLayout>-->
     <LinearLayout
         android:id="@+id/layoutLanguage"
         android:layout_width="match_parent"

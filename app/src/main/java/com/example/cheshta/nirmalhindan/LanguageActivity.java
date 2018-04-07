@@ -11,7 +11,7 @@ import android.widget.LinearLayout;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class LanguageActivity extends AppCompatActivity {
-    Button btnEnglish,btnAdmin,btnUser;
+    Button btnEnglish,btnHindi,btnAdmin,btnUser;
     LinearLayout layoutUser,layoutLanguage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,17 +19,23 @@ public class LanguageActivity extends AppCompatActivity {
         setContentView(R.layout.activity_language);
 
         btnEnglish = findViewById(R.id.btnEnglish);
+        btnHindi = findViewById(R.id.btnHindi);
         //btnAdmin = findViewById(R.id.btnAdmin);
         //btnUser = findViewById(R.id.btnUser);
         layoutLanguage = findViewById(R.id.layoutLanguage);
         //layoutUser = findViewById(R.id.layoutUser);
 
+        btnHindi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(LanguageActivity.this,LoginActivity.class));
+            }
+        });
+
         btnEnglish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(LanguageActivity.this,LoginActivity.class));
-                //layoutLanguage.setVisibility(View.GONE);
-                //layoutUser.setVisibility(View.VISIBLE);
             }
         });
        /* btnAdmin.setOnClickListener(new View.OnClickListener() {

@@ -22,9 +22,9 @@
 
                     <ImageView
                         android:id="@+id/ivCamera"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_alignBottom="@+id/tvGallery"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_alignTop="@+id/tvGallery"
                         android:layout_alignParentLeft="true"
                         android:layout_alignParentStart="true"
                         android:src="@drawable/ic_camera" />
@@ -39,13 +39,13 @@
                         android:fontFamily="serif"
                         android:textColor="@color/darkBlue"
                         android:textAppearance="@style/Base.ThemeOverlay.AppCompat.Light"
-                        android:textSize="20sp"
+                        android:textSize="25sp"
                         android:textStyle="bold" />
 
                     <ImageView
                         android:id="@+id/ivLogout"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
                         android:layout_alignParentEnd="true"
                         android:layout_alignParentRight="true"
                         android:layout_alignTop="@+id/tvGallery"
